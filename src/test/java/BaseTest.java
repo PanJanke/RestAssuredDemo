@@ -12,11 +12,10 @@ public class BaseTest {
 
     protected RequestSpecification requestSpec;
     protected ResponseSpecification responseSpec;
-
     @BeforeClass
     public void setUp(){
         requestSpec = new RequestSpecBuilder()
-                .setBaseUri("htttp://localhost:3000")
+                .setBaseUri("http://localhost:3000")
                 .setBasePath("posts")
                 .setContentType(ContentType.JSON)
                 .build();
