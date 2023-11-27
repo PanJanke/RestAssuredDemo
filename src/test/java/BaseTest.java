@@ -7,7 +7,6 @@ import io.restassured.http.ContentType;
 import io.restassured.specification.RequestSpecification;
 import io.restassured.specification.ResponseSpecification;
 import org.testng.annotations.AfterSuite;
-import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeSuite;
 
 import java.io.File;
@@ -17,7 +16,7 @@ import java.nio.file.Path;
 
 public class BaseTest {
 
-    protected long responseTime = 1000l;
+    protected final long responseTime = 1000L;
 
     protected static RequestSpecification requestSpec;
     protected static ResponseSpecification responseSpec;
