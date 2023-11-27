@@ -17,6 +17,8 @@ import java.nio.file.Path;
 
 public class BaseTest {
 
+    protected long responseTime = 1000l;
+
     protected static RequestSpecification requestSpec;
     protected static ResponseSpecification responseSpec;
     @BeforeSuite

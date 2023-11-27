@@ -29,6 +29,12 @@
       "id": 6,
       "title": "Patch",
       "author": "Kasia"
+    },
+
+    {
+      "id": 7,
+      "title": "DeleteTimeResponse",
+      "author": "Kasia"
     }
   ],
   "comments": [

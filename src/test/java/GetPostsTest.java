@@ -1,6 +1,8 @@
 import org.hamcrest.Matchers;
 import org.testng.annotations.Test;
 
+import java.util.concurrent.TimeUnit;
+
 import static io.restassured.RestAssured.given;
 
 public class GetPostsTest extends BaseTest {
@@ -20,6 +22,17 @@ public class GetPostsTest extends BaseTest {
         .and()
                 .assertThat().body("title[2]", Matchers.equalTo("trzeci"))
                 .assertThat().body("author[2]", Matchers.equalTo("Kasia"));
+    }
+
+    @Test
+    public void ResponseTimeTest() {
+        given()
+                .spec(requestSpec)
+        .when()
+                .get()
+        .then()
+                .spec(responseSpec)
+                .time(Matchers.lessThan(responseTime), TimeUnit.MILLISECONDS);
     }
 
 }
