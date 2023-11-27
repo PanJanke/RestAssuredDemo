@@ -10,12 +10,26 @@
       "title": "drugi",
       "author": "Tomek"
     },
-        {
+    {
       "id": 3,
       "title": "trzeci",
       "author": "Kasia"
+    },
+    {
+      "id": 4,
+      "title": "Update",
+      "author": "Kasia"
+    },
+    {
+      "id": 5,
+      "title": "Delete",
+      "author": "Kasia"
+    },
+    {
+      "id": 6,
+      "title": "Patch",
+      "author": "Kasia"
     }
-    
   ],
   "comments": [
     {

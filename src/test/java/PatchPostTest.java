@@ -11,7 +11,7 @@ public class PatchPostTest extends  BaseTest{
 
         Post createdPost = given()
                                 .spec(requestSpec)
-                                .pathParam("postId", 3)
+                                .pathParam("postId", 6)
                                 .body(post)
                             .when()
                                 .patch("{postId}")
