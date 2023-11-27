@@ -1,0 +1,30 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "pierwszy",
+      "author": "Bartek"
+    },
+    {
+      "id": 2,
+      "title": "drugi",
+      "author": "Tomek"
+    },
+        {
+      "id": 3,
+      "title": "trzeci",
+      "author": "Kasia"
+    }
+    
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
